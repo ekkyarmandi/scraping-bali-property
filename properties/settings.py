@@ -51,8 +51,14 @@ ROBOTSTXT_OBEY = False
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    "properties.middlewares.PropertiesDownloaderMiddleware": 543,
+#     # "properties.middlewares.PropertiesDownloaderMiddleware": 543,
+#     "scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware": 1,
+#     "scrapy_proxies.RandomProxy": 100,
 # }
+# PROXY_LIST = "new-proxy.txt"
+# PROXY_MODE = 0
+# ChatGPT prompt result for the configuratio above
+# See https://chat.openai.com/c/ae670184-77bf-417b-8bde-553c60f48162
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
